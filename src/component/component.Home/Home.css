@@ -1,0 +1,61 @@
+
+.header-saad{
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+
+
+h3{
+    margin-bottom:1em;
+    
+}
+
+
+.container-saad {
+    position: relative; 
+    width:100%;
+    margin: 0 auto;
+  }
+  
+  .container-saad img{
+      width:100%;
+  }
+
+
+  .container-saad .content-saad {
+    
+    position:center; 
+    position: absolute; 
+    top: 0; 
+   
+    color: #f1f1f1; 
+    width: 100%;
+    padding: 20px; 
+  }
+
+  .quote-saad{
+      margin-left:200px;
+      margin-right:200px;
+      margin-top:200px;
+      margin-bottom:50px;
+  }
+  .quote-left{
+      float:left;
+  }
+  .quote-right{
+    float:right;
+}
+
+.contact-saad{
+    margin-bottom: 50px;
+}
+
+
+
+  .education-sec{
+      margin-top:10px;
+  }
+
+ 
+ 
