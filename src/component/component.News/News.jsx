@@ -17,11 +17,13 @@ import { Grid, Col, Row, Image} from 'react-bootstrap';
 
             function Images(props){
                 return(<div>
+                    <a href="https://www.bbc.com/news/technology">
                             <div className="polaroid">
                             
                                 <img src={props.image_path} />
                                 
                             </div>
+                        </a>
                         </div>
 
                 )
@@ -73,13 +75,18 @@ import { Grid, Col, Row, Image} from 'react-bootstrap';
             </Col>
 
         <Col xs={12} sm={4} className="sidebar-section">
-        <Image src="assets/1.jpg" />
-        <a href="url">https://www.udemy.com/topic/react/</a>
+        <Image src="assets\News\udemy.jpg" />
+        <a href="https://www.udemy.com/topic/react">
+        <h3>New courses on Udemy !!</h3>
+        </a>
         </Col>           
         
         <Col xs={12} sm={4} className="sidebar-section">
-        <Image src="assets/1.jpg" />
-        <a href="url">https://www.udemy.com/topic/react/</a>
+        <Image src="assets\News\udemy.jpg" />
+        <a href="https://www.udemy.com/topic/react">
+        <h3>New courses on Udemy !!</h3>
+        </a>
+        
         </Col>
 
         
