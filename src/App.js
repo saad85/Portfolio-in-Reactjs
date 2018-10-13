@@ -32,7 +32,10 @@ import { faEnvelope, faKey, faAddressCard,faUserTie,
            faBookOpen,
            faBriefcase,
            faCode,
-           faDatabase
+           faDatabase,
+           faEdit,
+           faAlignCenter,
+           faCameraRetro
           
            
           
@@ -73,7 +76,11 @@ library.add(
   faQuoteLeft,faQuoteRight,
   faBookOpen,
  faHtml5,faBriefcase,
- faCode,faDatabase
+ faCode,faDatabase,
+ faEdit,
+ faAlignCenter,
+ faCameraRetro
+
   
 )
 

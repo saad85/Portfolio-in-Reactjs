@@ -48,7 +48,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
                  function BodyDesign(props){
                     return( 
-                         <div>
+                         <div className="design">
                             <Thumbnail>
                                                             
                                         <FontAwesomeIcon className="logo-container"
@@ -69,7 +69,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
             return(
                     <div>
-                        <Design/>
+                       
 
                         
                         <div className="develope-container">
@@ -82,7 +82,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
                                                 
                                                 <Col xs={6} sm ={4}>
                                                     
-                                                   <BodyDesign id="briefcase"/>
+                                                   <BodyDesign id="edit"/>
                                             
                                                 </Col>
 
@@ -104,7 +104,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
                                         <Row>
                                             <Col xs={6} sm ={4}>
 
-                                                  <BodyDesign id="briefcase"/>
+                                                  <BodyDesign id="align-center"/>
 
                                             </Col>
 
@@ -117,7 +117,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
                                             <Col xs={6} sm ={4}>
 
-                                                   <BodyDesign id="database"/>
+                                                   <BodyDesign id="camera-retro"/>
                                             
                                             </Col>
                                         </Row>

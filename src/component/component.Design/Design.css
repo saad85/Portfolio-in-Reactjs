@@ -17,6 +17,13 @@
     width: 100%; 
 
 }
+.design :hover{
+    transition: 0.5s;
+    
+    background-color:yellowgreen;
+
+
+}
 .logo-container{
     margin-left:150px; 
 }
