@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import {Thumbnail,Row,Button, Grid , Col , Media,Well } from 'react-bootstrap';
+import {Thumbnail,Row,Button, Grid , Col , Media,Well,Image } from 'react-bootstrap';
 
 
 
@@ -41,7 +41,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
                 <div> 
                 <Media>
                     <Media.Right>
-                        <img width={10} height={64} src={props.imgSrc}  />
+                        <Image  src={props.imgSrc} responsive />
                     </Media.Right>
                      
                      
@@ -105,7 +105,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
                                 <Col xs={12} sm ={4} id="2">
-                                <img width={64} height={500} src="assets\Technolgy\technology.jpeg" alt="thumbnail" />
+                                <Image width={64} height={600} src="assets\Technolgy\technology.jpeg" alt="thumbnail" />
                                 </Col>
 
 
@@ -115,7 +115,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
                                         <Media>
                                             <Media.Right>
                                                 
-                                                <img width={32} height={64} src="assets\Technolgy\jquery.png" thumbnail />
+                                                <Image width={32} height={90} src="assets\Technolgy\jquery.png" responsive/>
                                             
                                             </Media.Right>
 
@@ -147,7 +147,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
                                         <Media>
                                             <Media.Right>
                                                 
-                                                <img width={32} height={64} src="assets\Technolgy\react.png" thumbnail />
+                                                <Image width={5} height={90} src="assets\Technolgy\react.png" responsive />
                                             
                                             </Media.Right>
                                              
@@ -179,7 +179,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
                                         <Media>
                                             <Media.Right>
                                                 
-                                                <img width={32} height={64} src="assets\Technolgy\node.js_logo.png" thumbnail />
+                                                <Image width={32} height={90} src="assets\Technolgy\node.js_logo.png" responsive />
                                             
                                             </Media.Right>
                                              
@@ -211,9 +211,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
                         
                         <div className="develope-container">
-                                <div class="image">
+                                <div className="image">
 
-                                        <img src="assets\Technolgy\black-1.jpg" alt="" />
+                                        <Image src="assets\Technolgy\black-1.jpg" alt="" responsive  />
 
                                         <div className="logo-saad">
                                             

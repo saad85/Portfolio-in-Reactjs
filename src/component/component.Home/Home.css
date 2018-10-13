@@ -1,4 +1,15 @@
 
+
+.contact-saad{
+   
+}
+.contact-saad h3{
+    color:#111;
+}
+.button{
+   
+}
+
 .header-saad{
     margin-left: 250px;
     margin-right: 250px;
@@ -35,16 +46,19 @@ h3{
   }
 
   .quote-saad{
-      margin-left:200px;
-      margin-right:200px;
-      margin-top:200px;
-      margin-bottom:50px;
+     
+      margin-top:50px;
+      margin-bottom: 0;
+      
   }
   .quote-left{
       float:left;
   }
   .quote-right{
-    float:right;
+   float:left;
+   margin-left: 100px;
+   margin-top:0;
+    
 }
 
 .contact-saad{

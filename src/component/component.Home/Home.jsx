@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 
 import {  Grid, Row, Col, Image, Button, Thumbnail,PageHeader,Collapse,Well} from 'react-bootstrap';
 
+
+
 import './Home.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -57,7 +59,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
             return( 
               
             <div className="container-saad">
-                <Image src="assets/apple-black-and-white-camera-6482.jpg" alt="Notebook"  />
+                <Image src="assets/apple-black-and-white-camera-6482.jpg" alt="Notebook" responsive />
                 
                     <div className="content-saad">
                      
@@ -66,104 +68,47 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
                                     <p>My name is Samiul Islam</p>
                                     <small>This Portfolio is developed to reflect my accomplishments, skills, experiences in ReactJs.</small>
-                                    <small>React allows you to write modular and clean code, breaking the project into separate components.</small>
-                                    <small> This also allows for code reuse, which can really boost developer productivity.</small>
-                                    <small>Unlike large monolithic projects, React code is easy to maintain and update due to its modular structure.</small>
+                                    
+                                   
+                                   
                                 
                                 </div>
                       
 
+                      
+
+                             
+
                             <div  className ="quote-saad">
-                                        
-                                       <div  className ="quote-left" >
-                                           <Icon id="quote-left" size="5x" /> 
+                                 <div  className ="quote-left" >
+                                           <Icon id="quote-left" size="3x" /> 
                                         </div>
 
                                             <h3> 
                                                 
                                                 Your most unhappy customers are your greatest source of learning.
-                                                Success is a lousy teacher. It seduces smart people into thinking they can't lose.
+                                                Success is a lousy teacher. 
                                                 Life is not fair; get used to it.
+                                                    <div ></div> 
                                                     <div ></div>    
                                                     -Bill Gates
+                                                    </h3>
                                                     <div  className ="quote-right" >
-                                            <Icon id="quote-right" size="3x"/> 
-                                        </div>  
-                                                    
-                                            </h3>
+                                           <Icon id="quote-right" size="3x" /> 
+                                        </div>
+                                                  
                                         
-                                       
+                                 
                             </div>
+
+                             
                                     
                                     
                                     
                                     <div></div>
                                     
                                     
-                                    <Button bsStyle="primary" onClick={
-                                        ()=> this.setState({ open: !this.state.open})
-
-                                    }> CONTACT WITH ME </Button>
-
-                   
-                        
-                        
-                        
-                                    <Collapse in= {this.state.open}>
-
-                                            
-                                        <div className="contact-saad">
-                                        
-                                                
-                                            <Row>
-                                                    <Col xs={6} sm={4}>
-                                                    
-                                                            <div></div>
-                                                            <div></div>
-                                                                
-                                                                
-                                                            <div>
-                                        
-                                            
-                                                                    <IconContact name="envelope" size="3x"/>
-
-                                                                        <h3>Email: samiul.saad@gmail.com</h3>
-                                                                        
-                                                                
-                                                                </div>  
-                                            
-                                            
-                                                            <div> 
-                                                                
-
-                                                                    <IconContact name={['fab', 'apple']} size="3x"/> 
-                                                                
-                                                                
-                                                                        <h3>Cell: 016394...</h3>
-                                                                    
-                                                                
-                                                            </div> 
-
-                                            
-                                                            <div>
-                                                            
-                                                                    
-                                                                    <IconContact name={['fab', 'facebook']} size="3x"/> 
-                                                                        
-                                                                        <h3>Facebook id: ...</h3>
-                                                                
-                                                            
-                                                            </div>  
-
-                                                            
-                                                    </Col>
-                                            </Row>
-                                            
-                                        </div>
-                                            
-
-                                    </Collapse>
-
+                                    
                 </div>
 
                     
@@ -209,7 +154,83 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
                                                             </Well>
                                                         
                                                         </Col> 
+                                                    <Col xs={8} sm={4}>
                                                     
+                                                    <Well>
+                                                    <div className="button">    
+                                        
+                                        <Button bsStyle="primary" onClick={
+                                            ()=> this.setState({ open: !this.state.open})
+    
+                                        }> CONTACT WITH ME </Button>
+    
+                                          </div>     
+                                                
+                                            
+                            
+                            
+                            
+                                        <Collapse in= {this.state.open}>
+    
+                                                
+                                            <div className="contact-saad">
+                                            
+                                                    
+                                                <Row>
+                                                        <div>
+                                                             <IconContact name="envelope" size="lg"/>
+    
+                                                                            <h3>Email: samiul.saad@gmail.com</h3>
+                                                                            
+                                                                    
+                                                                    </div>  
+                                                
+                                                
+                                                                <div> 
+                                                                    
+    
+                                                                        <IconContact name={['fab', 'apple']} size="lg"/> 
+                                                                    
+                                                                    
+                                                                            <h3>Cell: 016394...</h3>
+                                                                        
+                                                                    
+                                                                </div> 
+    
+                                                
+                                                                <div>
+                                                                
+                                                                        
+                                                                        <IconContact name={['fab', 'facebook']} size="lg"/> 
+                                                                            
+                                                                           <h3> Facebook id: ...</h3>
+                                                                    
+                                                                
+    
+    
+                                                                </div> 
+    
+                                                                  
+                                                                    
+                                                           
+                                                                
+                                                      
+    
+                                                      
+                                                </Row>
+                                                
+                                                
+                                            </div>
+                                                
+    
+                                        </Collapse>
+    
+
+                                                    </Well>
+                                                    
+                                                    
+                                                    
+                                                    </Col>
                                                     </Row>
 
                                                 </Grid>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import {Thumbnail,Row,Button, Grid , Col , Image,Media,Well } from 'react-bootstrap';
+import {Thumbnail,Row,Button, Grid , Col , Image,Media,Well,PageHeader } from 'react-bootstrap';
 
 
 import { Card, CardBody, CardImage, CardTitle, CardText } from 'mdbreact';
@@ -56,7 +56,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
                                             color=" #111 "
                                             size="3x"
                                         />        
-                                                            
+                                    <PageHeader>{props.header}</PageHeader>                  
                                     <DesignDescription />
                                                         
                                                         
@@ -73,7 +73,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
                         
                         <div className="develope-container">
-                                <div class="image">
+                            <Design/>
+                                <div className="image">
 
                                         <img src="assets\design\design-img2.jpeg" alt="" />
 
@@ -82,18 +83,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
                                                 
                                                 <Col xs={6} sm ={4}>
                                                     
-                                                   <BodyDesign id="edit"/>
+                                                   <BodyDesign id="edit" header="PLATFORM"/>
                                             
                                                 </Col>
 
                                             <Col xs={6} sm ={4}>
-                                                    <BodyDesign id="code"/>
+                                                    <BodyDesign id="code" header="CODE"/>
                                             
                                             </Col>
 
                                             <Col xs={6} sm ={4}>
 
-                                                    <BodyDesign id="database"/>
+                                                    <BodyDesign id="database" header="BACK-END"/>
                                             
                                             </Col>
 
@@ -104,20 +105,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
                                         <Row>
                                             <Col xs={6} sm ={4}>
 
-                                                  <BodyDesign id="align-center"/>
+                                                  <BodyDesign id="shield-alt" header="TESTING" />
 
                                             </Col>
 
                                             <Col xs={6} sm ={4}>
                                                     
 
-                                                    <BodyDesign id="code"/>
+                                                    <BodyDesign id="desktop" header="WEB DOMAIN"/>
                                             
                                             </Col>
 
                                             <Col xs={6} sm ={4}>
 
-                                                   <BodyDesign id="camera-retro"/>
+                                                   <BodyDesign id="camera-retro" header="FEEDBACK"/>
                                             
                                             </Col>
                                         </Row>
