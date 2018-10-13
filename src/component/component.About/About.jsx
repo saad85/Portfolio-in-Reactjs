@@ -251,13 +251,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
                         
                   </Grid>
 
-          <div className="footer-container">
-                                <div class="image">
-
-                                        <img src="assets\footer.jpeg" alt="" />
-                                  </div>
-          </div>                              
-
+          
 
     </div>);
             
