@@ -164,10 +164,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
     
                                         }> CONTACT WITH ME </Button>
     
-                                          </div>     
-                                                
-                                            
-                            
+                                          </div>  
                             
                             
                                         <Collapse in= {this.state.open}>
@@ -193,48 +190,30 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
                                                                     
                                                                     
                                                                             <h3>Cell: 016394...</h3>
-                                                                        
-                                                                    
                                                                 </div> 
     
                                                 
                                                                 <div>
-                                                                
                                                                         
                                                                         <IconContact name={['fab', 'facebook']} size="lg"/> 
                                                                             
                                                                            <h3> Facebook id: ...</h3>
-                                                                    
-                                                                
     
     
-                                                                </div> 
-    
-                                                                  
-                                                                    
-                                                           
-                                                                
-                                                      
-    
+                                                                </div>
                                                       
                                                 </Row>
-                                                
-                                                
                                             </div>
                                                 
     
                                         </Collapse>
-    
+                                    </Well>
+                                                    
+                                </Col>
+                            </Row>
 
-                                                    </Well>
-                                                    
-                                                    
-                                                    
-                                                    </Col>
-                                                    </Row>
-
-                                                </Grid>
-                                            </div>
+                        </Grid>
+                     </div>
             
             
             
