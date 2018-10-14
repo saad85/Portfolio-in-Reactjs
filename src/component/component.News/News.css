@@ -45,6 +45,7 @@ Image{
     text-align: justify;
     letter-spacing: 1px;
     text-decoration-style: wavy;
+    font: icon;
 }
 .main-section p:hover{
     transition:.3s;
