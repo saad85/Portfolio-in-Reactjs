@@ -27,7 +27,7 @@ import { Grid, Col, Row, Image,h1,P,Well} from 'react-bootstrap';
                             <div className="polaroid">
 
                             <Well>
-                            <h3>The 6.0.0 release of Angular is here!</h3> </Well>
+                            <h3>The 6.0.0 release of {props.name}  is here!</h3> </Well>
                                 <Image src={props.image_path} />
                              
                             </div>
@@ -56,10 +56,10 @@ import { Grid, Col, Row, Image,h1,P,Well} from 'react-bootstrap';
         <div className ="container">
 
             
-            <Images image_path="assets\Technolgy\angular (1).png" />
+            <Images image_path="assets\Technolgy\angular (1).png" name ="ANGULAR" />
             
            
-            <Images image_path="assets\Technolgy\angular (1).png" />
+            <Images image_path="assets\Technolgy\react.png" name="REACT"/>
            
 
                 
