@@ -196,7 +196,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
                                             <Col xs={12} sm ={4}>
 
-                                                    <Icon id="database" size="3x"/>
+                                                    <Icon id="database" size="5x"/>
                                                     <p>Web design is a process of conceptualizing, planning, and building a collection of electronic files that determine the layout, colors, text styles, structure, graphics, images</p>
                                             </Col>
 
