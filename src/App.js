@@ -37,7 +37,8 @@ import { faEnvelope, faKey, faAddressCard,faUserTie,
            faAlignCenter,
            faCameraRetro,
            faDesktop,
-           faShieldAlt
+           faShieldAlt,
+           faPen
           
            
           
@@ -83,7 +84,8 @@ library.add(
  faAlignCenter,
  faCameraRetro,
  faDesktop,
- faShieldAlt
+ faShieldAlt,
+ faPen
 
   
 )

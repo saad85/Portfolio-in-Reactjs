@@ -23,14 +23,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
                 function Icon(props){
                    return(<div> <Thumbnail>
                                     <FontAwesomeIcon icon={props.id}
-                                            color=" #111 "
-                                            size="5x"
+                                            color="#8b0000 "
+                                            size={props.size}
                                      />
                                     
-                                    <h3>
-                                        Front-end web development is the converting data to graphical interface
-                                        for user to view and interact.
-                                    </h3>
+                                    
                     </Thumbnail>
                     </div>)
                 }
@@ -40,9 +37,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
                     return(
                 <div> 
                 <Media>
-                    <Media.Right>
-                        <Image  src={props.imgSrc} responsive />
-                    </Media.Right>
+                    
                      
                      
 
@@ -50,7 +45,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
                             <Media.Body >
 
                                 <div className="media-container">
-                                
+
+                                    
+                                <Icon id="pen" size="3x"/>
                                     <Media.Heading>{props.heading}</Media.Heading>
                                 
                                 </div>
@@ -70,8 +67,55 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 
+            }
 
-                }
+
+            function MediaHolder2(props){
+
+                return(
+            <div> 
+            <Media>
+                
+                 
+                 
+
+                <Thumbnail>
+                        <Media.Body >
+
+                            <div className="media-container">
+
+                                
+                            <Icon id="pen" size="3x"/>
+                                <Media.Heading>{props.heading}</Media.Heading>
+                            
+                            </div>
+                            
+                            <div className="media-container">
+                                {desc}
+                            
+                            </div>
+                        </Media.Body>
+            
+            
+                </Thumbnail>
+            
+            </Media> 
+        </div>
+        )
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
 
             return(
                     <div>
@@ -81,23 +125,24 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
                                 <Col xs={12} sm ={4} id="1">
                                  
                                     <Row id="1.1">
+                                    
                                       
                                     
-                                        <MediaHolder imgSrc="assets\Technolgy\JavaScript-logo.png"  heading="JAVASCRIPT" />
+                                        <MediaHolder   heading="JAVASCRIPT" />
                                     
                                     </Row>   
 
 
                                     <Row id="1.2">
                                         
-                                    <MediaHolder imgSrc="assets\Technolgy\angular (1).png"  heading="ANGULAR" />
+                                    <MediaHolder   heading="ANGULAR" />
                                     
                                     </Row>  
 
 
                                     <Row id="1.3">
 
-                                     <MediaHolder imgSrc="assets\Technolgy\vuejs-logo.jpg"  heading="VUE.JS" />    
+                                     <MediaHolder   heading="VUE.JS" />    
                                     
                                     </Row>                           
 
@@ -111,98 +156,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
                                 <Col xs={12} sm ={4} id="3">
                                     <Row id="3.1">
-                                        
-                                        <Media>
-                                            <Media.Right>
-                                                
-                                                <Image width={32} height={90} src="assets\Technolgy\jquery.png" responsive/>
-                                            
-                                            </Media.Right>
-
-                                        <Thumbnail>
-
-                                            <Media.Body>
-
-                                                <div className="media-container-2">
-                                                
-                                                    <Media.Heading>JQUERY</Media.Heading>
-                                                
-                                                </div>
-                                                
-                                                <div className="media-container-2">
-                                                    
-                                                        {desc}
-                                                
-                                                </div>
-                                            </Media.Body>
-                                        </Thumbnail>
-                                        
-                                     </Media>
+                                    <MediaHolder2   heading="JQUERY" />
                                     
                                     
                                     </Row>   
 
 
                                     <Row id="3.2">
-                                        <Media>
-                                            <Media.Right>
-                                                
-                                                <Image width={5} height={90} src="assets\Technolgy\react.png" responsive />
-                                            
-                                            </Media.Right>
-                                             
-                                             
-                                        <Thumbnail>
-
-                                            <Media.Body>
-
-                                                <div className="media-container-2">
-                                                
-                                                    <Media.Heading>REACT</Media.Heading>
-                                                
-                                                </div>
-                                                
-                                                <div className="media-container-2">
-                                                    
-                                                    {desc}
-                                                
-                                                </div>
-                                            </Media.Body>
-                                            
-                                            </Thumbnail>
-                                    
-                                    </Media>
+                                        
+                                    <MediaHolder   heading="REACT" />
                                 </Row>  
 
 
                                 <Row id ="3.3">
-                                        <Media>
-                                            <Media.Right>
-                                                
-                                                <Image width={32} height={90} src="assets\Technolgy\node.js_logo.png" responsive />
-                                            
-                                            </Media.Right>
-                                             
-                                             
-
-                                    <Thumbnail>
-                                            <Media.Body>
-
-                                                <div className="media-container-2">
-                                                
-                                                    <Media.Heading>NODE</Media.Heading>
-                                                
-                                                </div>
-                                                
-                                                <div className="media-container-2">
-                                                    
-                                                        {desc}
-                                                
-                                                </div>
-                                            </Media.Body>
-                                        </Thumbnail>
-                                        
-                                    </Media>
+                                <MediaHolder   heading="NODE" />
                                 </Row>
                             </Col>
                         </Row>
@@ -218,17 +185,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
                                         <div className="logo-saad">
                                             
                                             <Col xs={12} sm ={4}>
-                                                    <Icon id="briefcase"/>
+                                                    <Icon id="briefcase" size="5x"/>
+                                                    <p>Web design is a process of conceptualizing, planning, and building a collection of electronic files that determine the layout, colors, text styles, structure, graphics, images</p>
                                             </Col>
 
                                             <Col xs={12} sm ={4}>
-                                                    <Icon id="code"/>
-                                            
+                                                    <Icon id="code" size="5x"/>
+                                                    <p>Web design is a process of conceptualizing, planning, and building a collection of electronic files that determine the layout, colors, text styles, structure, graphics, images</p>
                                             </Col>
 
                                             <Col xs={12} sm ={4}>
 
-                                                    <Icon id="database"/>
+                                                    <Icon id="database" size="3x"/>
+                                                    <p>Web design is a process of conceptualizing, planning, and building a collection of electronic files that determine the layout, colors, text styles, structure, graphics, images</p>
                                             </Col>
 
                                         </div>
